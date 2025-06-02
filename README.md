@@ -1,78 +1,55 @@
+
 Tech Instagram Influencer Analysis
 --------------------------------------
 
 Project Overview
 ---------------------------
-
-This project involves analyzing Instagram activity data related to tech influencers. The main objective is to explore patterns, answer business-related questions, and derive actionable insights using SQL queries.
+This project analyzes Instagram activity data related to tech influencers. Using SQL, we explore engagement metrics, identify content trends, and answer key business questions to drive data-backed decision-making.
 
 Problem Statement
 ---------------------
-
-Analyze database tables containing Instagram activity data to identify trends, answer key business questions, and extract meaningful insights.
+Analyze Instagram account and content activity from database tables to:
+- Discover trends and patterns  
+- Extract meaningful insights  
+- Answer stakeholder queries  
 
 Dataset
 ---------------
-
-The dataset used in this project is stored in the gdb0120 database and comprises the following tables:
-
-dim_date: Contains date-related information.
-
-fact_account: Stores account activity details.
-
-fact_content: Includes content-related metrics.
+The data resides in the gdb0120 database and includes:
+- dim_date – Contains calendar date info  
+- fact_account – Tracks account-level metrics  
+- fact_content – Stores post performance and types  
 
 Key Objectives
 ---------------------
-
-The project aims to address the following ad-hoc requests:
-
-Identify unique post types: Determine the number and types of posts in the fact_content table.
-
-Impressions analysis: Identify the highest and lowest impressions for each post type.
-
-Weekend post filtering: Extract posts published on weekends in March and April and export them to a CSV file.
-
-Account statistics report: Generate a report with total profile visits and new followers per month.
-
-Likes by category in July: Calculate the total likes for each post category in July, arranged in descending order.
-
-Monthly post category counts: Display unique post categories and their counts per month.
-
-Reach percentage breakdown: Analyze the percentage of total reach for each post type.
-
-Quarterly engagement metrics: Report total comments and saves for each post category grouped by quarters (Q1, Q2, Q3).
-
-Top follower dates: List the top three dates in each month with the highest number of new followers.
-
-Weekly shares report: Create a stored procedure to calculate total shares for each post type by week.
+Business Request | Task
+------------------|------
+✅ Unique Post Types | Count post types from fact_content
+📊 Impressions Analysis | Highest/lowest impressions by post type
+📆 Weekend Posts | Filter posts from weekends in March/April & export to CSV
+📈 Monthly Account Report | Total profile visits & new followers per month
+❤️ Likes in July | Likes per category in July, sorted descending
+📅 Monthly Post Count | Count of each post category per month
+📡 Reach % Breakdown | Share of total reach per post type
+📓 Quarterly Engagement | Comments/saves by category grouped by Q1–Q3
+🔝 Follower Surges | Top 3 dates per month with most new followers
+🗓️ Weekly Shares | Stored procedure to calculate weekly shares by post type
 
 Highlights from Analysis
 --------------------------
-
-Post Types: Four distinct post types (IG Video, IG Image, IG Carousel, IG Reel) were identified.
-
-Impressions:
-
-IG Reels perform best with the highest impressions.
-
-IG Carousels have the lowest impressions.
-
-Reach:
-
-IG Reels dominate with 61.63% of the total reach.
-
-IG Carousels contribute the least (0.69%).
-
-Engagement:
-
-"Tech Tips" posts lead in comments and saves during Q2 and Q3.
-
-"Mobile" posts maintain consistent engagement.
+- Post Types Identified: IG Video, IG Image, IG Carousel, IG Reel  
+- Top Performing Content:
+  - Impressions: IG Reels lead; Carousels lag
+  - Reach: Reels = 61.63%, Carousels = 0.69%
+- Engagement:
+  - "Tech Tips" had the highest comments/saves in Q2 & Q3
+  - "Mobile" category shows steady interaction
 
 Tools and Technologies
 ------------------------------
+- SQL: To query the dataset and extract insights  
+- Excel: For charts and visual presentation  
 
-SQL: For querying the dataset and generating insights.
-
-Excel:For making charts
+PPT Presentation
+------------------------------
+👉 Click Here to View the Presentation: [https://youtu.be/k9jrGAI6bVs?si=pmaeh5slHNXDN18X]
